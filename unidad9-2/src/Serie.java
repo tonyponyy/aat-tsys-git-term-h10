@@ -1,5 +1,5 @@
 
-public class Serie {
+public class Serie implements Entregable {
 	private final int TEMPORADAS_DEFECTO = 3;
 	private final boolean ENTREGADO_DEFECTO = false;
 	
@@ -37,6 +37,11 @@ public class Serie {
 		this.genero = genero;
 		this.creador = creador;
 	}
+	public boolean compareTo() {
+		boolean resultado = true;
+		
+		return resultado;
+	}
 
 
 	public String getTitulo() {
@@ -62,6 +67,32 @@ public class Serie {
 				+ ", titulo=" + titulo + ", n_temporadas=" + n_temporadas + ", entregado=" + entregado + ", genero="
 				+ genero + ", creador=" + creador + "]";
 	}
+	
+	@Override
+	public int compareTO(Object a) {
+        if (this.n_temporadas > (int)a) {
+            return 1;
+        }
+        if ((this.n_temporadas < (int)a)) {
+            return -1;
+        }
+        return 0;
+    }
+	
+	@Override
+    public void entregar() {
+        this.entregado = true;
+    }
+
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
+
+    @Override
+    public boolean isEntregado() {
+        return entregado;
+    }
 	
 	
 }
