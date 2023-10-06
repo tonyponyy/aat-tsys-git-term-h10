@@ -39,8 +39,20 @@ public class main_app {
 			}
 		} 
 		System.out.println("Se entregan: "+entregados);
-		
-		
+				
 	}
+	//Mayores horas y mayores temporadas	
+
+	/*@Override
+	public String toString() {
+		Serie mayorTemporada=arraySerie[0];
+		Videojuego mayorHoras=arrayVideojuego[0];
+		for (int i = 1; i < arraySerie.length; i++) {
+			if(arraySerie[i].compareTo(mayorTemporada)==Serie)
+		}
+	}*/
+
 
 }
+
+
