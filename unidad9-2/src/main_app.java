@@ -51,7 +51,15 @@ public class main_app {
 			if(arraySerie[i].compareTo(mayorTemporada)==Serie)
 		}
 	}*/
-
+	
+	/*public String toString() {
+		if (Serie.compareTo(3)=1) {
+			String mayorserie;
+			System.out.println("Serie con mayor temporada" +mayorserie);
+		}else {
+			System.out.println();
+		}
+	}*/
 
 }
 
