@@ -40,27 +40,29 @@ public class main_app {
 		} 
 		System.out.println("Se entregan: "+entregados);
 				
-	}
-	//Mayores horas y mayores temporadas	
-
-	/*@Override
-	public String toString() {
-		Serie mayorTemporada=arraySerie[0];
-		Videojuego mayorHoras=arrayVideojuego[0];
-		for (int i = 1; i < arraySerie.length; i++) {
-			if(arraySerie[i].compareTo(mayorTemporada)==Serie)
-		}
-	}*/
 	
-	/*public String toString() {
-		if (Serie.compareTo(3)=1) {
-			String mayorserie;
-			System.out.println("Serie con mayor temporada" +mayorserie);
-		}else {
-			System.out.println();
+	//Mayores horas y mayores temporadas	
+	Serie mayors = new Serie("", "", 0, "");
+	
+	for (int i = 0; i < arraySerie.length; i++) {
+		if(arraySerie[i].compareTO(mayors)== 1) {
+			mayors = arraySerie[i];
 		}
-	}*/
+	}
+	
+	System.out.println(mayors.toString());
 
+	Videojuego mayorv = new Videojuego("", 0, "", "");
+	
+	for (int i = 0; i < arrayVideojuego.length; i++) {
+		if(arrayVideojuego[i].compareTO(mayorv)== 1) {
+			mayorv = arrayVideojuego[i];
+		}
+	}
+	
+	
+	System.out.println(mayorv.toString());
+}
 }
 
 

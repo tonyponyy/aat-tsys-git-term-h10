@@ -29,7 +29,7 @@ public class Serie implements Entregable {
 		this.creador = "";
 	}
 	
-	public Serie(String titulo, String creador, int n_temporadas,String genero) {
+	public Serie(String titulo, String genero, int n_temporadas,String creador) {
 		this.titulo = titulo;
 		this.creador = creador;
 		this.n_temporadas = n_temporadas;
@@ -70,10 +70,11 @@ public class Serie implements Entregable {
 	
 	@Override
 	public int compareTO(Object a) {
-        if (this.n_temporadas > (int)a) {
+        // TODO Auto-generated method stub
+        if (this.n_temporadas > ((Serie)a).getN_temporadas()) {
             return 1;
         }
-        if ((this.n_temporadas < (int)a)) {
+        if (this.n_temporadas < ((Serie)a).getN_temporadas()) {
             return -1;
         }
         return 0;

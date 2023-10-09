@@ -54,15 +54,15 @@ public class Videojuego implements Entregable {
 
 	@Override
 	public int compareTO(Object a) {
-		// TODO Auto-generated method stub
-		if (this.horas > (int)a) {
-			return 1;
-		}
-		if ((this.horas < (int)a)) {
-			return -1;
-		}
-		return 0;
-	}
+        // TODO Auto-generated method stub
+        if (this.horas > ((Videojuego)a).getHoras()) {
+            return 1;
+        }
+        if (this.horas < ((Videojuego)a).getHoras()) {
+            return -1;
+        }
+        return 0;
+    }
 
 	public String getTitulo() {
 		return titulo;
@@ -99,7 +99,7 @@ public class Videojuego implements Entregable {
 	@Override
 	public String toString() {
 		return "Videojuego [titulo=" + titulo + ", horas=" + horas + ", entregado=" + entregado + ", genero=" + genero
-				+ ", compa=" + compa + "]";
+				+ ", compañía=" + compa + "]";
 	}
 
 }
